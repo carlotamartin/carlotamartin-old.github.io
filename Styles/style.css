@@ -1,0 +1,277 @@
+/* ESTILOS PARA EL BODY */
+body {
+    background-image: url("https://us.123rf.com/450wm/djvstock/djvstock1612/djvstock161217242/68109504-eco-ville-verte-ic%C3%B4ne-vecteur-illustration-design-graphique.jpg");
+    background-size: 20rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    font-size: 1.3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.4em;
+    margin: 0;
+}
+
+/* ESTILOS PARA EL CONTENIDO */
+h1{
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 1.5rem 0;
+    padding: 1.5rem 0;
+    background-color: rgb(178, 206, 178);
+    border:rgb(178, 206, 178) 3px solid;
+    color: #194529;
+    border-radius: 5px;
+}
+
+h2 {
+    line-height: 1.3em;
+    font-size: 2.0rem;
+    text-align: center;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    background-color: rgb(178, 206, 178);
+    border:rgb(178, 206, 178) 3px solid;
+    color: #194529;
+    border-radius: 5px;
+}
+
+p {
+    margin-bottom: 1.6em;
+}
+
+
+/* ESTILOS PARA EL HEADER */
+.container {
+    width: 85%;
+    max-width: 850px;
+    margin: 0 auto;
+    /* para que el contenido se centre */
+}
+
+
+/* text-decoration: none-> para que los links no tengan subrayado */
+.header {
+    background-color: #194529;
+    text-decoration: none;
+    padding: 0.5rem 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+
+.header a {
+    color: rgb(214, 224, 214);
+    text-decoration: none;
+}
+
+
+
+.logo-nav-container {
+    display: flex; /* para centrar los elementos de forma horizontal y vertical */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    /* para que se adapte a pantallas pequeñas */
+}
+
+/* para centrar el logo */
+.logo-nav-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+
+
+.logo {
+    text-align: center;
+    letter-spacing: 0.5em;
+    font-size: 2em;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(214, 224, 214);
+}
+
+.logo-img {
+    height: 10%;
+    width: 10%;
+    display: none;
+}
+
+
+/* ESTILOS PARA LA BARRA DE NAVEGACIÓN */
+/* para que el logo no se desborde */
+.navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navigation ul li {
+    display: inline-block;
+    font-family: Arial, sans-serif;
+
+}
+
+.navigation ul li a {
+    display: block;
+    padding: 0;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+/* para que al pulsar en el header al pulsar en las secciones aparezca un color */
+.navigation ul li a:hover {
+    background-color: rgb(51, 150, 51);
+}
+
+
+
+/* ESTILOS PARA LA IMAGEN */
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    /* Este valor puedes ajustarlo según el tamaño que desees */
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+
+}
+
+/* ESTILOS PARA EL MAIN: solo especificar que haya padding entre el header y el main */
+main {
+    padding-top: 10rem;
+
+}
+
+/* ESTILOS PARA EL FORMULARIO */
+.back-button{
+    display: inline-block;
+    background-color: #194529;
+    color: rgb(214, 224, 214);
+    padding: 1rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.3rem;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+form {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    resize: none;
+    /* para que no se pueda redimensionar el textarea */
+}
+
+/* ESTILOS PARA EL FOOTER */
+.footer {
+    background-color: #f2f2f2;
+    padding: 4rem 0;
+    text-align: center;
+    margin-top: 6rem;
+}
+
+/*Media Queries*/
+/*Small*/
+@media (max-width: 767px) {
+    body{
+        background-position: center 90%;
+        padding: 0;
+    }
+    main {
+        font-family: sans-serif;
+        padding-top: 12rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        padding: 0.2rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    p, ul{
+        font-size: 1rem;
+    }
+
+    .header {
+        padding: 0.3rem 0 0 0;
+    }
+
+
+    .logo {
+        text-align: center;
+        font-size: 1.3em;
+        margin: 0.5rem 0.5rem;
+    }
+
+    .navigation {
+        width: 100%;
+        margin: 0;
+    }
+
+    .navigation ul {
+        display: none;
+    }
+
+    .navigation ul.show {
+        text-align: center;
+        display: block;
+    }
+
+    .navigation ul li {
+        display: block;
+    }
+
+    .navigation ul li a {
+        display: block;
+        padding: 0;
+        border: 1px solid rgb(214, 224, 214);
+    }
+
+    .navigation ul li a:hover {
+        background-color: rgb(178, 206, 178);
+    }
+}
+
+/*Medium*/
+@media (min-width: 768px) {
+    .logo-img {
+        display: block;
+    }
+
+    .show-desktop {
+        display: block;
+    }
+}

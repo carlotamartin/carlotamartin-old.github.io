@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Madrid Sostenible</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="Styles/style.css">
+    </head>
+    <body>
+        <header class = 'header'>
+            <div class ="container logo-nav-container">
+                <div class=" logo-nav-row logo-nav-row-1">
+                    <div class = 'logo' >
+                        MADRID 360
+                    </div>
+                    <img src="https://revista.dgt.es/Galerias/noticia/nacional/2019/10OCTUBRE/Madrid-360-DETALLE.jpg" alt=" Imagen de Madrid" class = "logo-img">
+                </div>
+                <nav  class = "navigation">
+                    <ul class = "show">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="pagina1.html">Metro</a></li>
+                        <li><a href="pagina2.html">Autobuses</a></li>
+                        <li><a href="pagina3.html">Bicicletas</a></li>
+                        <li><a href="pagina4.html">Futuro</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class = "main">
+            <div class = "container">
+                <h1>Transporte en Madrid del futuro</h1>
+
+                <p>En esta página queremos conocer tu opinión sobre el transporte en Madrid. Por favor, rellena el siguiente formulario:</p>
+                <form action="#" target="" method="get" name="formulariomedioambiente">
+                    <div>
+                        <label for="sexo">Sexo:</label>
+                        <select id="sexo" name="sexo">
+                            <option value="masculino">Masculino</option>
+                            <option value="femenino">Femenino</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="edad">Edad:</label>
+                        <select id="edad" name="edad">
+                            <option value="0 a 15">0 a 15</option>
+                            <option value="15 a 20">15 a 20</option>
+                            <option value="21 a 30">21 a 30</option>
+                            <option value="31 a 40">31 a 40</option>
+                            <option value="41 a 50">41 a 50</option>
+                            <option value="51 a 60">51 a 60</option>
+                            <option value="61 en adelante">61 en adelante</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="transporte">Transporte usado diariamente:</label>
+                        <select id="transporte" name="transporte">
+                            <option value="coche">Coche</option>
+                            <option value="moto">Moto</option>
+                            <option value="bicicleta">Bicicleta</option>
+                            <option value="autobus">Autobús</option>
+                            <option value="metro">Metro</option>
+                            <option value="tren">Tren</option>
+                            <option value="avion">Avión</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="transporte">¿Por qué lo usas?</label>
+                        <select id="fluencia" name="transporte">
+                            <option value="unico">Única opción de transporte</option>
+                            <option value="rapido">Rápido</option>
+                            <option value="seguro">Seguro</option>
+                            <option value="barato">Más barato</option>
+                            <option value="comodo">Comodidad</option>
+                            <option value="sin uso">No lo usan</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="transporte">Frecuencia de usos</label>
+                        <select id="tiempo" name="transporte">
+                            <option value="diario">Diario</option>
+                            <option value="semanal">Semanal</option>
+                            <option value="mensual">Mensual</option>
+                            <option value="anual">Anual</option>
+                            <option value="nunca">Nunca</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="transporte">¿Cree que utilizando el transporte público apoyamos a una ciudad sostenible?</label>
+                        <select id="pregunta" name="transporte">
+                            <option value="si">Sí</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea name="mensaje"  placeholder="Describe brevemente en menos de 300 carácteres" maxlength="300" ></textarea>
+                    </div>
+                    <div>
+                        <label for="email" id = "email1">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Introduce tu email" required>
+                    </div>
+                    <div>
+                        <input type="submit" name="enviar" value="Enviar" formaction="encuesta.html">
+                    </div>
+                </form>
+        </div>
+        </main>
+        <footer class="footer">
+            <div>
+                <p>Derechos de autor © 2023 - Madrid y el medio ambiente </p>
+            </div>
+        </footer>
+    </body>
+</html>
